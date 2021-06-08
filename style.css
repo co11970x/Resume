@@ -1,18 +1,20 @@
 *{
 	font-family:微軟正黑體;
-	//border:solid 1px black;
 }
 
 html,body{
+	width:100%;
+	height:100%;
 	padding:0px;
-	margin:0px;
+	margin-top:10px;
 }
-
 h6, h5 , h4, h3{
 	padding:0px;
 	margin:0px;
 }
-
+body{
+	background-color: #d5c2c4;
+}
 .resume{
 	width:550px;
 	height:680px;
@@ -20,37 +22,39 @@ h6, h5 , h4, h3{
 	position:relative;
 	padding:10px 20px 10px 20px;
 	overflow:hidden;
-	border:solid 1px rgba(0,0,0,0.5);
+	box-shadow:3px 3px 5px 6px #666;
+	background-color: #fff;
 }
 .photo img{
 	width:20%;
 	border-radius:50%;
 	border:solid 10px white;
 }
-
-
-
 .top{
 	position:absolute;
 	left:220px;
 	top:20px;
 }
-.top  h2 , .top h4{
+.top  h2{
 	margin:0px;
 	color:white;
 	padding-top:5px;
+	font-weight: normal;
 }
-hr{
-	width:1%;
+.top h4{
+	color:white;
+	padding-top:5px;
+	margin:0px;
+	font-weight:lighter;
 }
 .top > hr{
 	position:absolute;
-	height:60px;
+	height:55px;
 	left:-30px;
 	background-color: white;
 }
 .background{
-	background-color: #666;
+	background-color: #717493;
 	width:550px;
 	height:90px;
 	position:absolute;
@@ -63,12 +67,12 @@ hr{
 	height:250px;
 	position:absolute;
 }
-.about h5, .lenguaces > h5, .mobbies> h5, .contact h5{
-	background-color: #999;
+.about h5, .lenguaces > h5, .mobbies> h5, .contact>h5{
+	background-color: #d7bec2;
 	padding:3px 10px;
-	text-align:right;
+	text-align:left;
 	position:relative;
-	left:-90px;
+	left:-20px;
 }
 .about>h6{
 	padding:10px;
@@ -116,12 +120,7 @@ hr{
 	line-height:18px;
 	margin:20px 0px 20px 0px;
 	top:50px;
-}
-.work > hr{
-	width:0%;
-	height:50px;
-	top:25px;
-	left:160px;
+	padding-bottom:5px;
 }
 .work_in p,.school p{
 	left:180px;
@@ -134,24 +133,22 @@ hr{
 	left:180px;
 	top:-500px
 }
-.down_right > spen5{
-	position:relative;
-	width:0%;
-	height:15px;
-	top:25px;
-	left:160px;
-}
-.work > spen5{
-	top:50px;
-}
 .school{
-	margin-top:50px;
+	margin-top:35px;
 }
 .school > p{
-	line-height:20px;
+	margin-top:17px;
+	line-height:18px;
+}
+.clas > p{
+	position:absolute;
+	left:196px;
+	top:260px;
+	width:150px;
+	line-height:18px;
 }
 .skill{
-	margin-top:26px;
+	margin-top:30px;
 }
 .contact{
 	margin-top:5px;
@@ -163,6 +160,11 @@ hr{
 	font-size: 25px;
 	text-align: center;
 	padding: 3px;
+}
+.contact h5{
+	width:150px;
+	left:-46px;
+	text-align:left;
 }
 .inter1_on h6{
 	margin:15px 0px 15px 0px;
@@ -180,6 +182,7 @@ hr{
 		top:385px;
 		right:-280px;
 		transform:translate(-50%,-50%);
+		border-radius:25px;
 }
 .HTML1{
 		position:absolute;
@@ -191,15 +194,16 @@ hr{
 }
 .HTML3{
 		position:absolute;
-		top:479px;
+		top:480px;
 }
 .HTML4{
 		position:absolute;
-		top:508px;
+		top:511px;
 }
 .html_in,.html_in1,.html_in2,.html_in3,.html_in4{
-	background-color: #666;
+	background-color: #d7bec2;
 	height:8px;
+	border-radius:25px;
 }
 .html_in{
 	width:80%;
@@ -216,10 +220,9 @@ hr{
 .html_in4{
 	width:35%;
 }
-.line1 ,.line2,.line3{
+.line1,.line2,.line3,.line0{
 	height:50px;
-	width:0%;
-	border:solid 1px black;
+	border:solid 1px rgba(0,0,0,0.5);
 	color:#666;
 	position:absolute;
 }
@@ -235,4 +238,32 @@ hr{
 	height:40px;
 	top:275px;
 	left:180px;
+}
+.line0{
+	right:185px;
+	width:0.5px;
+}
+.work >.line-top{
+	border-top:solid 1px;
+	position:relative;
+	position:absolute;
+	left:100px;
+	width:245px;
+	top:10px;
+}
+.line-top1{
+	border-top:solid 1px;
+	position:relative;
+	position:absolute;
+	left:-25px;
+	width:265px;
+	top:237px;
+}
+.line-top2{
+	border-top:solid 1px;
+	position:relative;
+	position:absolute;
+	left:-25px;
+	width:265px;
+	top:341px;
 }
